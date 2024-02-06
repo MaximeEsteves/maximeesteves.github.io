@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  padding: 80px;
+}
+
+
+
+/* DEBUT---------- TITRE H1 ET H2 ----------- DEBUT */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color:  #3C3C3E;
+  font-size: 1em;
+  background-color: white;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-family:'aboreto', sans-serif;
+  color:#536976;
+}
+
+h2 {
+  color: #BBD2C5;
+  font-family: 'aboreto';
+}
+
+/* FIN---------- TITRE H1 ET H2 ----------- FIN */
+
+/* ------------ bordure de séparation - debut------------ */
+
+.bordure {
+  color: #BBD2C5;
+  border-bottom:1px solid;
+  margin: 0px 100px 0 100px;
+  }
+
+/* ------------ bordure de séparation - fin------------ */
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.lien-icone img{
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.lien-icone:hover {
+  opacity: 0.5;
+}
+
+header,
+footer {
+  background:#1D363F;
+    padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navigation a:hover {
+  color: #536976;
+  -webkit-animation: slide-out-blurred-right 0.45s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+  animation: slide-out-blurred-right 0.45s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+}
+ @-webkit-keyframes slide-out-blurred-right {
+  0% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1000px) scaleX(2) scaleY(0.2);
+            transform: translateX(1000px) scaleX(2) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+}
+@keyframes slide-out-blurred-right {
+  0% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1000px) scaleX(2) scaleY(0.2);
+            transform: translateX(1000px) scaleX(2) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight:750;
+}
+
+
+.cta {
+  display: inline-block;
+  background: linear-gradient(#2C5364, #203A43);
+  color: #BBD2C5;
+  border-radius: 5px;
+  padding: 20px 30px;
+  border: none;
+}
+
+.cta:hover {
+  background: #484e4b;
+  text-decoration: none;
+}
+/* ------------ FORMULAIRE CONTACT ------- */
+.section-contact h2{
+  text-align: center;
+  color:#BBD2C5;
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+
+.cta{
+  margin-top: 3em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+}
+
+.form-nom-email {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  color:#BBD2C5;
+}
+
+input[type='submit'] {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+}
+/* ------------ FORMULAIRE CONTACT ------- */
+.appear{
+  opacity:0;
+  position: relative;
+  top: 100px;
+}
+
+/*------------- Section RESPONSIVE----------- */
+@media screen and (max-width: 996px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header nav img {
+    margin-bottom: 20px;
+  }
+
+  header,
+  footer {
+    padding: 20px 50px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 50px 20px 50px 20px;
+  }
+
+  nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+  /*------------- fin Section RESPONSIVE----------- */
+

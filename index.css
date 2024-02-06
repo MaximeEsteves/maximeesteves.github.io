@@ -1,0 +1,261 @@
+.couleur-fond-intro{
+  background: #536976;  
+  background: -webkit-linear-gradient(to top, #BBD2C5, #203A43, #1D363F);
+  background: linear-gradient(to top, #BBD2C5, #203A43, #1D363F);
+height: 600px;
+}
+
+.texte-profil{
+ text-align: justify;
+ margin: 100px 600px;
+ font-size:x-large;
+}
+.texte-profil em{
+  font-weight: 900;
+  color:#BBD2C5 ;
+ }
+
+ .texte-profil em:hover{
+  font-weight: 900;
+  color:#536976;
+ }
+
+ #text-container {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  margin: 50px;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+footer{
+   background-color: #0F2027;
+   color:#BBD2C5 ;
+}
+
+  .accueil-introduction {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    align-items:flex-start;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+ 
+  .accueil-introduction h1 {
+    margin: 50px 0px 30px 0px;
+    color: #BBD2C5;
+  }
+
+ .titre-projet h1 {
+    color: #536976;
+    margin-top: 1em;
+    text-align: center;
+    font-size: 6em;
+  }
+
+  .titre-projet h1:hover {
+    color: #BBD2C5;
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  .rubrique-projet{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+/* --DEBUT------ EFFET CERCLE -----DEBUT-- */
+.circle {
+  width: 690px;
+  height: 690px;
+  border: 3px solid #536976;
+  box-shadow: 0 0 30px 5px #536976;
+  border-radius: 50%;
+  position: absolute;
+  left: 21%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* --FIN------ EFFET CERCLE -----DEBUT-- */
+.line {
+  /* --DEBUT------ EFFET LINE -----DEBUT-- */
+  position: absolute;
+  background-color: #BBD2C5;
+  width: 10px;
+  z-index: -1;
+box-shadow: 0 0 60px 10px #BBD2C5;
+}
+
+#line {
+  left: calc(50% - 750px);
+}
+
+#line2 {
+  left: calc(50% + 750px);
+  
+}
+/* --FIN------ EFFET LINE -----FIN-- */
+
+  .section-centrale{
+    background-color: white;
+  }
+
+  .grid-projet {
+    display: grid;
+    grid-template-columns: 600px;
+    gap: 15px;
+  }  
+  /* DEBUT ----- SECTION "MES PROJETS" ------- DEBUT */
+  .projet{
+    background: #536976;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, white, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, white, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+  
+  .projet-suivant{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-left: 65px;
+}
+
+.projet h1{
+  margin: 60px 60px 20px;
+  color: #536976;
+}
+
+.projet h2{
+  margin-bottom: 20px;
+}
+
+h4:hover{
+  color: #536976;
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+
+.portfolio-section-photos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-webdesign{
+  width: 1400px;
+  display: flex;
+  text-align: justify;
+gap: 250px;
+}
+.grid-projet-2 {
+  display: grid;
+  grid-template-columns: 380px 380px;
+  gap: 450px;
+  }
+      
+  .grid-projet-2 img {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+  }
+       
+  .grid-projet-2 img:hover{
+  transform: scale(1.1);
+  }
+
+  /* FIN ----- SECTION "MES PROJETS" ------- FIN */
+.informatique{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 100px;
+}
+
+.grid-projet-1 {
+  margin-right: 200px;
+  display: grid;
+  grid-template-columns: 150px;
+  grid-template-rows: 150px;
+  gap: 50px;
+}
+
+.informatique img {
+  width: 100%;
+    height: 100%;
+   object-fit: cover;
+   transition: transform 0.3s ease;
+   z-index: 1;
+   }
+        
+   .informatique img:hover{
+   transform: scale(1.3);
+   }
+/* -----------------animation scroll----------- */
+.appear{
+  opacity:0;
+  position: relative;
+  top: 100px;
+}
+
+/*------------- Section RESPONSIVE----------- */
+@media screen and (max-width: 996px) {
+  .accueil-introduction {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .accueil-introduction div {
+    padding-right: 0;
+    text-align: center;
+    order: 2;
+  }
+
+  .accueil-introduction img {
+    order: 1;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .accueil-photos {
+    padding: 20px;
+  }
+
+  .grid-projet {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px;
+    gap: 10px;
+    
+    flex-direction: column;
+    justify-content: center;
+  }  
+  h3{
+    margin: 50px 20px;
+  }
+  .accueil-introduction a {
+    display: none;
+  }
+}
+  @media screen and (max-width: 1500px) {
+  .rubrique-projet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .section-contact {
+    padding: 50px 20px;
+  }
+
+  .form-nom-email {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+/*------------- fin Section RESPONSIVE----------- */
