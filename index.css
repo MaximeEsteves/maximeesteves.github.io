@@ -50,6 +50,9 @@ footer{
     margin: 50px 0px 30px 0px;
     color: #BBD2C5;
   }
+.accueil-introduction p {
+    color: #BBD2C5;
+}
 
  .titre-projet h1 {
     color: #536976;
@@ -146,7 +149,9 @@ h4:hover{
   justify-content: center;
   align-items: center;
 }
-
+.text-webdesign p{
+  color: #BBD2C5;
+}
 .text-webdesign{
   width: 1400px;
   display: flex;
