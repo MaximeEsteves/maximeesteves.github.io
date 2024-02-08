@@ -50,9 +50,9 @@ footer{
     margin: 50px 0px 30px 0px;
     color: #BBD2C5;
   }
-.accueil-introduction p {
+  .accueil-introduction p {
     color: #BBD2C5;
-}
+  }
 
  .titre-projet h1 {
     color: #536976;
@@ -86,8 +86,8 @@ footer{
 }
 
 /* --FIN------ EFFET CERCLE -----DEBUT-- */
+/* --DEBUT------ EFFET LINE -----DEBUT-- */
 .line {
-  /* --DEBUT------ EFFET LINE -----DEBUT-- */
   position: absolute;
   background-color: #BBD2C5;
   width: 10px;
@@ -149,14 +149,15 @@ h4:hover{
   justify-content: center;
   align-items: center;
 }
-.text-webdesign p{
-  color: #BBD2C5;
-}
+
 .text-webdesign{
   width: 1400px;
   display: flex;
   text-align: justify;
 gap: 250px;
+}
+.text-webdesign p{
+  color: #BBD2C5;
 }
 .grid-projet-2 {
   display: grid;
@@ -209,6 +210,138 @@ gap: 250px;
 }
 
 /*------------- Section RESPONSIVE----------- */
+/*------------- Section RESPONSIVE----------- */
+/*------------- Section RESPONSIVE----------- */
+@media screen and (max-width: 1501px) {
+  /* Placez ici les styles pour les écrans de 24 pouces et moins */
+
+
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1em;
+  }
+  .titre-projet h1{
+    font-size: 2.5em;
+  }
+  .texte-profil {
+    margin: 50px 250px;
+    font-size: large;
+  }
+
+  .grid-projet {
+    grid-template-columns: 250px, 250px;
+  }
+
+  .grid-projet-2 {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    }
+        
+    .grid-projet-2 img {
+    width: 60%;
+    }
+    #logoMAR{
+      margin-left: 140px;
+    }
+         
+    .grid-projet-2 img:hover{
+    transform: scale(1.1);
+    }
+
+  .informatique {
+    gap: 60px;
+  }
+  #info img{
+    margin-top: 60px;
+  }
+
+  .accueil-photos {
+    padding: 20px;
+  }
+
+  .projet h1 {
+    margin: 30px 30px 10px;
+  }
+
+  .projet h2 {
+    margin-bottom: 10px;
+  }
+
+  .section-contact {
+    padding: 30px 20px;
+  }
+
+  .form-nom-email {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+.text-webdesign{
+  width: 1100px;
+}
+.circle {
+  width: 490px;
+  height: 490px;
+  margin-top: 20px;
+}
+.informatique img {
+width: 60%;
+height: 60%;
+object-fit: cover;
+transition: transform 0.3s ease;
+z-index: 1;
+}
+#line {
+  left: calc(63% - 750px);
+}
+
+#line2 {
+  left: calc(37% + 750px);
+  
+}
+header a{
+font-size: 13px;
+}
+.lien-icone img{
+  margin-left: 10px;
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+
+.lien-icone:hover {
+  opacity: 0.5;
+}
+
+header,
+footer {
+    padding-top: 10px;
+  padding-bottom: 10px;
+}
+.couleur-fond-intro{
+height: 450px;
+}
+}
+
+
+@media screen and (max-width: 17in) {
+  /* Placez ici les styles pour les écrans de 17 pouces et moins */
+}
+
+@media screen and (max-width: 15in) {
+  /* Placez ici les styles pour les écrans de 15 pouces et moins */
+}
+@media screen and (min-width: 1501px) {
+  /* Placez ici les styles pour les écrans de taille supérieure à 1500px */
+}
+@media screen and (max-width: 996px) {
+  /* Placez ici les styles pour les écrans de taille tablette */
+}
+
+
 @media screen and (max-width: 996px) {
   .accueil-introduction {
     flex-direction: column;
@@ -220,12 +353,6 @@ gap: 250px;
     padding-right: 0;
     text-align: center;
     order: 2;
-  }
-
-  .accueil-introduction img {
-    order: 1;
-    margin-bottom: 20px;
-    width: 100%;
   }
 
   .accueil-photos {
@@ -248,19 +375,5 @@ gap: 250px;
     display: none;
   }
 }
-  @media screen and (max-width: 1500px) {
-  .rubrique-projet {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 
-  .section-contact {
-    padding: 50px 20px;
-  }
-
-  .form-nom-email {
-    flex-direction: column;
-    gap: 0;
-  }
-}
 /*------------- fin Section RESPONSIVE----------- */
