@@ -6,6 +6,7 @@ html {
 }
 section {
   padding: 80px;
+  
 }
 
 
@@ -194,6 +195,34 @@ input[type='submit'] {
 }
 
 /*------------- Section RESPONSIVE----------- */
+@media screen and (max-width: 996px) {
+  .line {
+      display: none !important; /* Utilisation de !important pour s'assurer que la règle est prioritaire */
+  }
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header nav img {
+    margin-bottom: 20px;
+  }
+  
+  header,
+  footer {
+    padding: 20px 50px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 
   /*------------- fin Section RESPONSIVE----------- */
 
