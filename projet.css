@@ -163,17 +163,86 @@ footer{
   color:#BBD2C5;
 }
 /*------------- Section RESPONSIVE----------- */
-@media screen and (max-width: 24in) {
+@media screen and (max-width: 1024px) {
   /* Placez ici les styles pour les écrans de 24 pouces et moins */
+  .portfolio-section-photos{
+    margin-top: 40px;
+  } 
+  
+  .grid-projet-1 {
+    display: grid;
+    grid-template-columns: 250px 250px 250px !important;
+    gap: 30px;
+  }
+    .grid-projet-2 {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      gap: 30px;
+      margin-bottom: 80px;
+      }
+      .grid-projet-3 {
+        display: grid;
+        grid-template-columns: 400px 400px;
+        gap: 30px;
+        margin-bottom: 80px;
+        }
+        .grid-projet {
+          display: grid;
+          grid-template-columns: 700px;
+          gap: 30px;
+          margin-bottom: 80px;
+          }
+  .text-webdesign-test{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-nom-email {
+    flex-direction: column;
+    gap: 0;
+  } 
+  header a{
+    font-size: 13px;
+    }
+    .lien-icone img{
+      margin-left: 10px;
+      height: 30px;
+      width: 30px;
+      object-fit: cover;
+    }
+    
+    header,
+    footer {
+        padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      margin: auto;
+    }
+    
+    .form-nom-email {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+      gap: 20px;
+      
+    }
+    
+    .form-column {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
 }
 
-@media screen and (max-width: 17in) {
-  /* Placez ici les styles pour les écrans de 17 pouces et moins */
-}
 
-@media screen and (max-width: 15in) {
-  /* Placez ici les styles pour les écrans de 15 pouces et moins */
-}
 @media screen and (max-width: 1501px) {
  /* Placez ici les styles pour les écrans de taille supérieure à 1500px */
  .text-webdesign-test{
