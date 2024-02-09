@@ -270,10 +270,6 @@ gap: 250px;
     margin-bottom: 10px;
   }
 
-  .section-contact {
-    padding: 30px 20px;
-  }
-
   .form-nom-email {
     flex-direction: column;
     gap: 10px;
@@ -312,10 +308,6 @@ font-size: 13px;
   object-fit: cover;
 }
 
-.lien-icone:hover {
-  opacity: 0.5;
-}
-
 header,
 footer {
     padding-top: 10px;
@@ -334,46 +326,79 @@ height: 450px;
 @media screen and (max-width: 15in) {
   /* Placez ici les styles pour les écrans de 15 pouces et moins */
 }
-@media screen and (min-width: 1501px) {
-  /* Placez ici les styles pour les écrans de taille supérieure à 1500px */
-}
+
 @media screen and (max-width: 996px) {
   /* Placez ici les styles pour les écrans de taille tablette */
 }
 
 
 @media screen and (max-width: 996px) {
-  .accueil-introduction {
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1em;
+  }
+  .titre-projet h1{
+    font-size: 2.5em;
+  }
+  .texte-profil {
+    margin: 50px 250px;
+    font-size: large;
+  }
+  .rubrique-projet{
+    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 50px;
   }
 
-  .accueil-introduction div {
-    padding-right: 0;
-    text-align: center;
-    order: 2;
+  .grid-projet-2 {
+    display: flex;
+  }
+  #logoMAR{
+    margin-left: 0px;
+  }
+  
+  .grid-projet-2 img {
+    width: 200px;
+    margin: 0px -0px 0px -160px;
+    }
+   
+   
+    .text-webdesign{
+  width: 750px;
+}     
+
+  .informatique {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 60px;
+  }
+  #info2{
+    margin-left: 190px;
   }
 
   .accueil-photos {
     padding: 20px;
   }
 
-  .grid-projet {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px;
-    gap: 10px;
-    
-    flex-direction: column;
-    justify-content: center;
-  }  
-  h3{
-    margin: 50px 20px;
-  }
-  .accueil-introduction a {
-    display: none;
-  }
+
+.circle {
+  width: 400px;
+  height: 400px;
+  margin-left: 100px;
+}
+.informatique img {
+width: 50%;
+height: 50%;
+object-fit: cover;
+transition: transform 0.3s ease;
+z-index: 1;
+}
 }
 
 /*------------- fin Section RESPONSIVE----------- */
