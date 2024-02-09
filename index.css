@@ -319,17 +319,88 @@ height: 450px;
 }
 
 
-@media screen and (max-width: 17in) {
-  /* Placez ici les styles pour les écrans de 17 pouces et moins */
-}
 
-@media screen and (max-width: 15in) {
+@media screen and (max-width: 1024px) {
   /* Placez ici les styles pour les écrans de 15 pouces et moins */
+  .couleur-fond-intro{
+    height: 580px;
+    }
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1em;
+  }
+  #line {
+    left: calc(85% - 750px);
+  }
+  
+  #line2 {
+    left: calc(14% + 750px);
+    
+  }
+  .titre-projet h1{
+    font-size: 2.5em;
+  }
+  .texte-profil {
+    margin: 50px 250px;
+    font-size: large;
+  }
+  .rubrique-projet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .grid-projet-2 {
+    display: flex;
+  }
+  #logoMAR{
+    margin-left: 0px;
+  }
+  
+  .grid-projet-2 img {
+    width: 200px;
+    margin: 0px -0px 0px -160px;
+    }
+   
+   
+    .text-webdesign{
+  width: 750px;
+}     
+
+  .informatique {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 60px;
+  }
+  #info2{
+    margin-left: 190px;
+  }
+
+  .accueil-photos {
+    padding: 20px;
+  }
+
+.circle {
+  width: 400px;
+  height: 400px;
+  margin-left: 100px;
+}
+.informatique img {
+width: 50%;
+height: 50%;
+object-fit: cover;
+transition: transform 0.3s ease;
+z-index: 1;
 }
 
-@media screen and (max-width: 996px) {
-  /* Placez ici les styles pour les écrans de taille tablette */
 }
+
 
 
 @media screen and (max-width: 996px) {
