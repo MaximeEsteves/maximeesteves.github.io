@@ -398,74 +398,127 @@ object-fit: cover;
 transition: transform 0.3s ease;
 z-index: 1;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: auto;
+}
+
+.form-nom-email {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  gap: 20px;
+  
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+}
 
 }
 
-
+/* ------ TELEPHONE ------- */ 
 
 @media screen and (max-width: 996px) {
+  .couleur-fond-intro{
+    height: 750px;
+    }
+  
   h1 {
-    font-size: 2em;
+    font-size: 4.4em;
   }
   
   h2 {
-    font-size: 1em;
+    font-size: 2.9em;
+  }
+  h4{
+    font-size: 2em;
+  }
+  .accueil-introduction {
+    width: 80%;
+  }
+ .accueil-introduction a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 10% 0% 0% 20%;
+ }
+  .accueil-introduction p{
+    font-size: 2em;
+    margin: 80px 0px 30px 0px ;
   }
   .titre-projet h1{
-    font-size: 2.5em;
+    font-size: 4em;
   }
   .texte-profil {
-    margin: 50px 250px;
-    font-size: large;
+    margin: 50px 60px;
+    font-size: 2em;
   }
   .rubrique-projet{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 150px;
   }
-
+.rubrique-projet p{
+font-size: 2em;
+margin-top: 50px;
+}
   .grid-projet-2 {
     display: flex;
+    gap: 50px;
+    margin-bottom: -60px;
   }
   #logoMAR{
     margin-left: 0px;
   }
-  
+  .grid-projet{
+    display: flex;
+    flex-direction: column;
+  }
   .grid-projet-2 img {
-    width: 200px;
-    margin: 0px -0px 0px -160px;
+    width: 400px;
+    margin: 0px 0px 0px 0px;
     }
    
-   
     .text-webdesign{
-  width: 750px;
+      display: none;
 }     
 
   .informatique {
     display: flex;
     justify-content: center;
     align-content: center;
-    gap: 60px;
+    gap: 90px;
   }
   #info2{
     margin-left: 190px;
+  }
+  #info img{
+    margin-top: 30px;
   }
 
   .accueil-photos {
     padding: 20px;
   }
 
-
 .circle {
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   margin-left: 100px;
 }
 .informatique img {
-width: 50%;
-height: 50%;
+width: 80%;
+height: 80%;
 object-fit: cover;
 transition: transform 0.3s ease;
 z-index: 1;
