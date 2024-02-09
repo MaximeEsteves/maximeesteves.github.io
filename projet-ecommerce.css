@@ -162,10 +162,45 @@ h1{
     color:#BBD2C5;
   }
   /*------------- Section RESPONSIVE----------- */
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 24in) {
+    /* Placez ici les styles pour les écrans de 24 pouces et moins */
+  }
   
+  @media screen and (max-width: 17in) {
+    /* Placez ici les styles pour les écrans de 17 pouces et moins */
+  }
+  
+  @media screen and (max-width: 15in) {
+    /* Placez ici les styles pour les écrans de 15 pouces et moins */
+  }
+  @media screen and (max-width: 1501px) {
+    /* Placez ici les styles pour les écrans de taille supérieure à 1500px */
+    header a{
+      font-size: 13px;
+      }
+      .lien-icone img{
+        margin-left: 10px;
+        height: 30px;
+        width: 30px;
+        object-fit: cover;
+      }
+      
+      header,
+      footer {
+          padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .text-webdesign-test{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-nom-email {
+    flex-direction: column;
+    gap: 0;
+  }
     .portfolio-section-photos{
-      background-color: white;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -180,26 +215,18 @@ h1{
       grid-template-columns: 1fr;
       gap: 15px;
     }
-    
-      .image-quartet {
-        grid-template-rows: 1fr;
-        gap: 15px;
-      }
-  
-      .grid-projet-video {
-        grid-template-columns: 1fr;
-        gap: 15px;
-      }
   p{
     margin-bottom: 20px;
   }
-  }
-  @media screen and (max-width: 1500px) {
-  .text-webdesign-test{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+
+
+ @media screen and (max-width: 996px) {
+    /* Placez ici les styles pour les écrans de taille tablette */
+    .grid-projet-3 {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      gap: 30px;
+      margin-bottom: 80px;
+    }
   }
   /*------------- fin Section RESPONSIVE----------- */
