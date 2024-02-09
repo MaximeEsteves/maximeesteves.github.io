@@ -203,10 +203,15 @@ input[type='submit'] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 15px;
   }
-  
+  .lien-icone img{
+    height: 120px !important;
+    width: 120px !important;
+  }
   header nav img {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
   
   header,
@@ -214,13 +219,10 @@ input[type='submit'] {
     padding: 20px 50px;
   }
   
-  h1 {
-    font-size: 2em;
-  }
-  
   nav a {
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 2em !important;
   }
 }
 
