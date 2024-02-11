@@ -1,225 +1,233 @@
-h1{
-    margin: 60px 60px 20px;
-    color:  #3B4F51;
-  }
-  .titre-projet-js1{
-    margin: 60px 60px 20px;
-    color:  #3B4F51;
-  }
-  h2{
-    margin-bottom: 20px;
-    color: #3B4F51;
-  }
-  h4{
-    color: #3C3C3E;
-  }
-  h4:hover{
-    color: #3B4F51;
-    transition: transform 0.3s ease;
-    transform: scale(1.1);
-  }
-  .bordure {
-    color: #3B4F51;
-    border-bottom:1px solid;
-    margin: 20px 300px 20px 300px;
-    }
-  
-  .projet-suivant{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    margin-left: 65px;
-  }
-  
-  /* DEBUT----------GRID PROJET------------------- */
-  .portfolio-section-photos{
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 100px 0px 100px 0px;
-    background-color: #3C505233;
-    padding: 50px;
-  }
-  
-  .portfolio-section-photos p{
-    margin-right: 100px;
-  }
-  
-  .text-webdesign{
-    width: 900px;
-    text-align: justify;
-  }
-    
-  .grid-projet img {
+h1 {
+  margin: 60px 60px 20px;
+  color: #3B4F51;
+}
+
+.titre-projet-js1 {
+  margin: 60px 60px 20px;
+  color: #3B4F51;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #3B4F51;
+}
+
+h4 {
+  color: #3C3C3E;
+}
+
+h4:hover {
+  color: #3B4F51;
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+
+.bordure {
+  color: #3B4F51;
+  border-bottom: 1px solid;
+  margin: 20px 300px 20px 300px;
+}
+
+.projet-suivant {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-left: 65px;
+}
+
+/* DEBUT----------GRID PROJET------------------- */
+.portfolio-section-photos {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 0px 100px 0px;
+  background-color: #3C505233;
+  padding: 50px;
+}
+
+.portfolio-section-photos p {
+  margin-right: 100px;
+}
+
+.text-webdesign {
+  width: 900px;
+  text-align: justify;
+}
+
+.grid-projet img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  }
-  
-  /* FIN----------GRID PROJET------------------- */
-  
-  /* DEBUT------grid 1 PROJET-----DEBUT  */
-  .grid-projet-1 {
-    display: grid;
-    grid-template-columns: 1300px;
-    grid-template-rows: 400px;
-    gap: 80px;
-  }
-  
-  .informatique img {
-    width: 100%;
-     object-fit: cover;
-     }
- 
-  .informatique{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 50px;
-  }
-  
-  .grid-projet-3 {
-    display: grid;
-    grid-template-columns: 550px 550px;
-    gap: 30px;
-    margin-bottom: 80px;
-  }
-  
-  .grid-projet-3 img {
+}
+
+/* FIN----------GRID PROJET------------------- */
+
+/* DEBUT------grid 1 PROJET-----DEBUT */
+.grid-projet-1 {
+  display: grid;
+  grid-template-columns: 1300px;
+  grid-template-rows: 400px;
+  gap: 80px;
+}
+
+.informatique img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.informatique {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+
+.grid-projet-3 {
+  display: grid;
+  grid-template-columns: 550px 550px;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.grid-projet-3 img {
   width: 100%;
   object-fit: cover;
   border: 1px solid #3B4F51;
-  }
-  .portfolio-section-photos-1{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .portfolio-section-photos-1 h3{
-    margin: 100px 0px 100px 0px;
-    background-color: #3C505233;
-    padding: 50px;
-    width: 750px;
-    text-align: justify;
-  }
-  /* FIN------grid 1 PROJET-----FIN  */
-  /* DEBUT------FIN DE PAGE PROJET + CONTATC-----DEBUT  */
-  
-  .portfolio-section-photos a{
-    color: #3C3C3E;
-  }
-  .text-webdesign em:hover{
-    font-weight: 900;
-    color:#77a1a5;
-   }
-  .portfolio-section-photos-4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .grid-projet-4 {
-    display: grid;
-    grid-template-columns: 380px;
-    gap: 450px;
-    }
-        
-    .grid-projet-4 img {
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    border-radius: 50%;
-    margin-bottom: 180px;
-    }
-         
-    .grid-projet-4 img:hover{
-    transform: scale(1.1);
-    }
-  .projet{
-    background: #536976;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, white, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, white, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      }
-  
-  .projet h1{
+}
+
+.portfolio-section-photos-1 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-section-photos-1 h3 {
+  margin: 100px 0px 100px 0px;
+  background-color: #3C505233;
+  padding: 50px;
+  width: 750px;
+  text-align: justify;
+}
+/* FIN------grid 1 PROJET-----FIN */
+
+/* DEBUT------FIN DE PAGE PROJET + CONTATC-----DEBUT */
+
+.portfolio-section-photos a {
+  color: #3C3C3E;
+}
+
+.text-webdesign em:hover {
+  font-weight: 900;
+  color: #77a1a5;
+}
+
+.portfolio-section-photos-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-projet-4 {
+  display: grid;
+  grid-template-columns: 380px;
+  gap: 450px;
+}
+
+.grid-projet-4 img {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+  margin-bottom: 180px;
+}
+
+.grid-projet-4 img:hover {
+  transform: scale(1.1);
+}
+
+.projet {
+  background: #536976; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, white, #203A43, #0F2027); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, white, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.projet h1 {
   margin: 60px 60px 20px;
   color: #536976;
-  }
-  
-  .projet h2{
-  margin-bottom: 20px;
-  color: #BBD2C5;
-  text-align: center;
-  }  
-  footer{
-    background: #0F2027;
-    color:#BBD2C5;
-  }
-  /*------------- Section RESPONSIVE----------- */
-  @media screen and (max-width: 1024px) {
-    /* Placez ici les styles pour les écrans de 24 pouces et moins */
-    .portfolio-section-photos{
-      margin-top: 40px;
-    }
-    
-    .grid-projet-3 {
-      display: grid;
-      grid-template-columns: 300px 300px;
-      gap: 30px;
-      margin-bottom: 80px;
-      
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      width: 75%;
-      margin: auto;
-    }
-    
-    .form-nom-email {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin: auto;
-      gap: 20px;
-      
-    }
-    
-    .form-column {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin: auto;
-      margin-bottom: 20px;
-    }
-    
+}
 
+.projet h2 {
+  margin-bottom: 20px;
+  color: #bbd2c5;
+  text-align: center;
+}
+
+footer {
+  background: #0f2027;
+  color: #bbd2c5;
+}
+/*------------- Section RESPONSIVE----------- */
+@media screen and (max-width: 1024px) {
+  /* Placez ici les styles pour les écrans de 24 pouces et moins */
+  .portfolio-section-photos {
+    margin-top: 40px;
   }
-  
-  @media screen and (max-width: 1501px) {
-    /* Placez ici les styles pour les écrans de taille supérieure à 1500px */
-    header a{
-      font-size: 13px;
-      }
-      .lien-icone img{
-        margin-left: 10px;
-        height: 30px;
-        width: 30px;
-        object-fit: cover;
-      }
-      
-      header,
-      footer {
-          padding-top: 10px;
-        padding-bottom: 10px;
-      }
-      .text-webdesign-test{
+
+  .grid-projet-3 {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 30px;
+    margin-bottom: 80px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+  }
+
+  .form-nom-email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    gap: 20px;
+  }
+
+  .form-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1501px) {
+  /* Placez ici les styles pour les écrans de taille supérieure à 1500px */
+  header a {
+    font-size: 13px;
+  }
+  .lien-icone img {
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+  }
+
+  header,
+  footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .text-webdesign-test {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -229,33 +237,80 @@ h1{
     flex-direction: column;
     gap: 0;
   }
-    .portfolio-section-photos{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .grid-projet {
-      grid-template-columns: 1fr;
-      gap: 15px;
-    }
-  
-    .grid-projet-1 {
-      grid-template-columns: 1fr;
-      gap: 15px;
-    }
-  p{
+  .portfolio-section-photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-projet {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .grid-projet-1 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  p {
     margin-bottom: 20px;
   }
+}
 
-
- @media screen and (max-width: 996px) {
-    /* Placez ici les styles pour les écrans de taille tablette */
-    .grid-projet-3 {
-      display: grid;
-      grid-template-columns: 400px 400px;
-      gap: 30px;
-      margin-bottom: 80px;
-    }
+@media screen and (max-width: 996px) {
+  /* Placez ici les styles pour les écrans de taille tablette */
+  .titre-projet-js1 {
+    margin: 100px 0px 100px 50px;
   }
-  /*------------- fin Section RESPONSIVE----------- */
+  h1 {
+    font-size: 4.4em;
+  }
+  h2 {
+    font-size: 2.9em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 2em;
+    margin-bottom: 50px;
+  }
+  p {
+    font-size: 2em;
+    margin: 50px 0px 50px 50px;
+  }
+  .grid-projet {
+    display: grid;
+    grid-template-columns: 750px;
+    gap: 30px;
+    margin-bottom: 80px;
+  }
+  .grid-projet-1 {
+    display: grid;
+    grid-template-columns: 750px;
+    grid-template-rows: 0px;
+    gap: 50px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .informatique img {
+    width: 100%;
+    object-fit: cover;
+    gap: 100px;
+  }
+
+  .informatique {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-projet-3 {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    gap: 30px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*------------- fin Section RESPONSIVE----------- */
