@@ -55,14 +55,14 @@ h1 {
 }
 
 h2 {
-  color: #BBD2C5;
+  color: #aec4b8;
   font-family: 'aboreto';
 }
 /* FIN---------- TITRE H1 ET H2 ----------- FIN */
 
 /* ------------ bordure de séparation - debut------------ */
 .bordure {
-  color: #BBD2C5;
+  color: #aec4b8;
   border-bottom: 1px solid;
   margin: 0px 100px 0 100px;
 }
@@ -134,7 +134,7 @@ a {
 .cta {
   display: inline-block;
   background: linear-gradient(#2C5364, #203A43);
-  color: #BBD2C5;
+  color: #aec4b8;
   border-radius: 5px;
   padding: 20px 30px;
   border: none;
@@ -183,7 +183,7 @@ textarea {
 
 label {
   margin-bottom: 10px;
-  color: #BBD2C5;
+  color: #aec4b8;
 }
 
 input[type='submit'] {
@@ -235,5 +235,43 @@ nav em{
     margin-right: 10px;
     font-size: 2em !important;
   }
+
+  form {
+    width: 100%;
+  }
+
+  .section-contact .cta {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.6em;
+  }
+
+  h1 {
+    font-size: 4.4em;
+  }
+
+  h2 {
+    font-size: 2.9em !important;
+    text-align: left;
+  }
+  
+  h3 {
+    font-size: 2em;
+    text-align: left !important;
+  }
+  
+  h4 {
+    font-size: 2em;
+    margin-bottom: 50px;
+    text-align: left;
+  }
+  
+  p {
+    font-size: 2em;
+    text-align: left;
+    margin: 50px 0px 50px 50px;
+  }
+
 }
 /*------------- fin Section RESPONSIVE----------- */
