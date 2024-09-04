@@ -117,7 +117,8 @@ h4:hover {
   padding: 50px;
 }
 /* FIN------grid 1 PROJET-----FIN  */
-/* DEBUT------FIN DE PAGE PROJET + CONTATC-----DEBUT  */
+
+/* DEBUT------FIN DE PAGE PROJET + CONTACT-----DEBUT  */
 
 .portfolio-section-photos a {
   color: #3c3c3e;
@@ -165,18 +166,16 @@ h4:hover {
 
 .projet h2 {
   margin-bottom: 20px;
-  color: #bbd2c5;
   text-align: center;
 }
 
 footer {
   background: #0f2027;
-  color: #bbd2c5;
 }
 
 /*------------- Section RESPONSIVE----------- */
 @media screen and (max-width: 1024px) {
-  /* Placez ici les styles pour les écrans de 24 pouces et moins */
+
   .portfolio-section-photos {
     margin-top: 40px;
   }
@@ -262,7 +261,7 @@ footer {
 }
 
 @media screen and (max-width: 1501px) {
-  /* Placez ici les styles pour les écrans de taille supérieure à 1500px */
+
   .text-webdesign-test {
     display: flex;
     flex-direction: column;
@@ -316,35 +315,19 @@ footer {
   }
 }
 
+/* ----- TELEPHONE ----- */
 @media screen and (max-width: 996px) {
-  /* Placez ici les styles pour les écrans de taille tablette */
   .titre-projet-js {
     margin: 100px 0px 100px 50px;
     color: #f08374;
   }
-
-  h1 {
-    font-size: 4.4em;
+  
+  .grid-projet {
+    display: grid;
+    grid-template-columns: 750px;
+    gap: 30px;
+    margin-bottom: 80px;
   }
-
-  h2 {
-    font-size: 2.9em;
-  }
-
-  h3 {
-    font-size: 2em;
-  }
-
-  h4 {
-    font-size: 2em;
-    margin-bottom: 50px;
-  }
-
-  p {
-    font-size: 2em;
-    margin: 50px 0px 50px 50px;
-  }
-
   .grid-projet-1 {
     display: grid;
     grid-template-columns: 250px 250px 250px;
@@ -366,23 +349,11 @@ footer {
     margin-bottom: 80px;
   }
 
-  .grid-projet {
-    display: grid;
-    grid-template-columns: 750px;
-    gap: 30px;
-    margin-bottom: 80px;
-  }
-
   .text-webdesign-test {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .form-nom-email {
-    flex-direction: column;
-    gap: 0;
   }
 
   header a {
