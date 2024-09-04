@@ -7,7 +7,7 @@ $(window).scroll(function(){
 
         // Vérifie si l'élément est dans la zone visible de la fenêtre
         if (distanceFromTop - scrollTop < windowHeight - 100) {
-            console.log("hello");
+            console.log("Salut :)");
             const delaiAnim = $(this).data("delai");
             $(this).delay(delaiAnim).animate({
                 top: 0,
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { selector: '.titre-projet-js h1', text: "Site web - portfolio" },
         { selector: '.titre-projet-js1 h1', text: "Site e-commerce" }
     ];
-    const delay = 90; // Delay in milliseconds between each character
+    const delay = 90; 
 
     function displayText(container, text) {
         let index = 0;
