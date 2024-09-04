@@ -15,12 +15,12 @@ header {
 
 .accueil-introduction h1 {
   margin: 150px 0px 50px 0px;
-  color: #BBD2C5;
+  color: #aec4b8;
   font-size: 8rem;
 }
 
 .accueil-introduction p {
-  color: #BBD2C5;
+  color: #aec4b8;
   font-size: 2rem;
   text-align:justify;
 }
@@ -36,7 +36,7 @@ header {
 
 .texte-profil em {
   font-weight: 900;
-  color: #BBD2C5 ;
+  color: #aec4b8;
 }
 
 .texte-profil em:hover {
@@ -60,7 +60,7 @@ header {
 }
 
 .titre-projet h1:hover {
-  color: #BBD2C5;
+  color: #aec4b8;
   margin-top: 2em;
   text-align: center;
 }
@@ -160,7 +160,7 @@ h4:hover {
   width: 600px;  
   height: 600px; 
   border-radius: 50%;
-  box-shadow: 0 0 50px 15px #93aca8;
+  box-shadow: 0 0 50px 15px #aec4b8;
   padding: 35px;
   box-sizing: border-box;
 }
@@ -178,7 +178,7 @@ h4:hover {
 }
 
 .row img {
-  max-width: 75%; /* Taille de base pour les images */
+  max-width: 75%;
   max-height: 60%;
   object-fit: contain;
 }
@@ -381,7 +381,7 @@ h4:hover {
   }
 }
 
-/* ------ TELEPHONE ------- */
+/* --------------- TELEPHONE -------------------- */
 
 @media screen and (max-width: 996px) {
   .couleur-fond-intro {
@@ -392,14 +392,6 @@ h4:hover {
     font-size: 4.4em;
   }
 
-  h2 {
-    font-size: 2.9em;
-  }
-
-  h4 {
-    font-size: 2em;
-  }
-
   .accueil-introduction {
     width: 80%;
   }
@@ -408,6 +400,7 @@ h4:hover {
     padding: 40px 50px;
     display: flex;
     justify-content: center;
+    font-size: 2em;
   }
 
   .accueil-introduction p {
@@ -421,7 +414,6 @@ h4:hover {
 
   .texte-profil {
     margin: 50px 60px;
-    font-size: 2em;
   }
 
   .rubrique-projet {
@@ -493,4 +485,5 @@ h4:hover {
     transition: transform 0.3s ease;
     z-index: 1;
   }
+
 }
