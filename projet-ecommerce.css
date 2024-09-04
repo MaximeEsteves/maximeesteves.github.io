@@ -124,7 +124,7 @@ h4:hover {
 
 .text-webdesign em:hover {
   font-weight: 900;
-  color: #77a1a5;
+  color: #aec4b8;
 }
 
 .portfolio-section-photos-4 {
@@ -152,9 +152,9 @@ h4:hover {
 }
 
 .projet {
-  background: #536976; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, white, #203A43, #0F2027); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, white, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #536976;
+  background: -webkit-linear-gradient(to bottom, white, #203A43, #0F2027);
+  background: linear-gradient(to bottom, white, #203A43, #0F2027);
 }
 
 .projet h1 {
@@ -164,17 +164,16 @@ h4:hover {
 
 .projet h2 {
   margin-bottom: 20px;
-  color: #bbd2c5;
   text-align: center;
 }
 
 footer {
   background: #0f2027;
-  color: #bbd2c5;
 }
+
 /*------------- Section RESPONSIVE----------- */
+
 @media screen and (max-width: 1024px) {
-  /* Placez ici les styles pour les écrans de 24 pouces et moins */
   .portfolio-section-photos {
     margin-top: 40px;
   }
@@ -211,7 +210,7 @@ footer {
 }
 
 @media screen and (max-width: 1501px) {
-  /* Placez ici les styles pour les écrans de taille supérieure à 1500px */
+  
   header a {
     font-size: 13px;
   }
@@ -255,28 +254,11 @@ footer {
     margin-bottom: 20px;
   }
 }
+/* -------------- TELEPHONE ----------------- */
 
 @media screen and (max-width: 996px) {
-  /* Placez ici les styles pour les écrans de taille tablette */
-  .titre-projet-js1 {
+.titre-projet-js1 {
     margin: 100px 0px 100px 50px;
-  }
-  h1 {
-    font-size: 4.4em;
-  }
-  h2 {
-    font-size: 2.9em;
-  }
-  h3 {
-    font-size: 2em;
-  }
-  h4 {
-    font-size: 2em;
-    margin-bottom: 50px;
-  }
-  p {
-    font-size: 2em;
-    margin: 50px 0px 50px 50px;
   }
   .grid-projet {
     display: grid;
@@ -289,7 +271,6 @@ footer {
     grid-template-columns: 750px;
     grid-template-rows: 0px;
     gap: 50px;
-
     display: flex;
     flex-direction: column;
   }
