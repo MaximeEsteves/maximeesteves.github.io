@@ -7,7 +7,7 @@ $(window).scroll(function(){
 
         // Vérifie si l'élément est dans la zone visible de la fenêtre
         if (distanceFromTop - scrollTop < windowHeight - 100) {
-            console.log("Salut :)");
+            console.log("Scrooooooooooooooooooooollll:)");
             const delaiAnim = $(this).data("delai");
             $(this).delay(delaiAnim).animate({
                 top: 0,
