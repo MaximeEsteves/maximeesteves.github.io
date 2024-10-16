@@ -1,0 +1,2 @@
+initialiserBoutons();
+testFacile();
