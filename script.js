@@ -49,13 +49,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // début --------scrool-bar------  début //
 
-window.addEventListener('scroll', function() {
-    const navbar = document.getElementById('navbar');
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
+if (document.body.getAttribute('data-page') === 'index') {
+    window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+}
 
 // fin --------scrool-bar------  fin //
