@@ -486,5 +486,43 @@ header {
       z-index: 1;
     }
   
+    #titreh1, #titreh2{
+      margin:50px 0px 50px 50px;
+  }
+  #titreh3 {
+    font-size: 25px;
+    margin: 50px 90px 50px 90px;
+  }
+
+  .jeux1 p{
+      width: 200px;
+      height: 200px;
+      font-size: 3em;
+  }
+  .valider{
+    margin-top: 350px;
+  }
+  button{
+    width: 300px;
+    height: 90px;
+    font-size: 25px;
+}
+#indice{
+  width: 160px;
+}
+.sectionjeux{
+  display: flex;
+  display: grid;
+  grid-template-columns: 300px;
+
+}
+.jeux1{
+  margin: auto;
+  justify-content: center;
+  display: grid;
+  width: 300px;
+  height: 300px;
+}
   }
   
+  /*------------- fin Section RESPONSIVE----------- */
