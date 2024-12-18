@@ -14,6 +14,7 @@
     <script src="jeux/scriptjeux.js" defer></script>
     <script src="jeux/lancementjeux.js" defer></script>
     <script src="script.js" defer></script>
+    <script src="jeux\tour_hanoi_v1.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
 </head>
@@ -33,6 +34,8 @@
         </nav>
     </header>
     <main>
+<!--DEBUT------------- JEU LOGIQUE ----------DEBUT-->
+<!--DEBUT------------- JEU LOGIQUE ----------DEBUT-->
         <div class="titre-jeux" data-text="jeux">
             <h1 id="titreh1"></h1>
         </div>
@@ -59,7 +62,13 @@
             
             
         </section>
-        
+<!--FIN------------- JEU LOGIQUE ----------FIN-->
+<!------------------------------------------------->
+<!------------------------------------------------->
+<!------------------------------------------------->
+<!--DEBUT------------- TOUR HANOI ----------DEBUT-->
+<section id="interfaceJeuLogique">
+
         <div class="valider">
             
             <button type="button" id="indice">Indice</button>
@@ -78,13 +87,43 @@
                 <button type="button" id="changerDifficile">Clique</button>
                 <button type="button" id="changerExtreme">Clique</button>
             </div>
-       
-        
     
         </div>
-        <div class="bordure" id="projet"></div>
-            <!-- MES PROJETS -->
-            <section class="projet">
+</section>
+
+        <section id="introductionJeu">
+            <h1 id="h1">Les tours de Hanoï</h1>
+            <h3 id="h3introduction">Le but du jeu est d'amener la pile sur la dernière base en respectant les deux règles suivantes : 
+            <ol>
+                <li> Déplacer un seul disque à la fois </li>
+                <li> Ne jamais poser un disque plus grand sur un plus petit. </li>
+            </ol>
+        </h3>
+            
+            <h2 id="erreur"></h2>
+</section>
+
+<section id="tours">
+                <div id="tourA"></div>   
+                <div id="tourB"></div>   
+                <div id="tourC"></div>   
+</section>
+
+<section id="interactionJeu">
+        <h3 id="h3texte">Entrer deux chiffres pour déplacer un disque (exemple: 12)</h3>
+        <p id="deplacement">Nombre de coup :</p>    
+        <input type="text"> <br>
+        <button id="btnRecommencerHanoi">Recommencer</button>
+</section>
+
+
+<!--FIN------------- TOUR HANOI --------------FIN-->
+<!------------------------------------------------->
+<!------------------------------------------------->
+<!------------------------------------------------->
+<!------------------ MES PROJETS ------------------>
+<section class="projet">
+                <div class="bordure" id="projet"></div>
                 <div class="appear" data-delai="0">
                     <h1>MES PROJETS</h1>
                     <div class="projet-suivant">
