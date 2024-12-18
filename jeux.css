@@ -1,4 +1,19 @@
-/** debut---------- BLOC DU JEU ---------- debut**/
+/** debut---------- COMMUN ---------- debut**/
+h1{
+  margin: 1em 0em 1em 0em;
+}
+
+/** FIN---------- BLOC DU JEU LOGIQUE ---------- FIN**/
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/** debut---------- BLOC DU JEU LOGIQUE ---------- debut**/
 
 #changerFacile{
   background-color: rgb(200, 226, 50);
@@ -13,7 +28,7 @@
   background-color: rgb(190, 109, 33);
 }
 section {
-  padding: 20px !important;
+  padding: 1em !important;
 }
 
 #titreh1, #titreh2{
@@ -21,10 +36,7 @@ section {
 }
 
 #titreh3{
-    margin-top: 20px;
-}
-#titreh2, h3{
-    display: inline;
+    margin-top: 1em;
 }
 
 #titreh3{
@@ -106,9 +118,74 @@ button:hover {
 .bordure {
   color: white !important;
 }
-/** fin---------- BLOC DU JEU ---------- fin**/
 
-  /* DEBUT ----- SECTION "MES PROJETS" ------- DEBUT */
+#interfaceJeuLogique{
+  margin: 0px 0px 200px 0px;
+}
+/** fin---------- BLOC DU JEU LOGIQUE---------- fin**/
+/*
+/*
+/*
+/*
+/** debut---------- BLOC DU JEU HANOI---------- debut**/
+#h1{
+  margin-left: 50px;
+}
+#h3texte{
+  margin-bottom: 1em;
+}
+
+#h3introduction{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tourA, #tourB, #tourC{
+  width: 200px;
+  height: 150px;
+  border-bottom: 5px solid #1F3941;
+  margin: 80px 15px 50px 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+#deplacement{
+  margin: 0px 0px 15px 0px;
+}
+
+#tours {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: -50px 0px 0px 0px;
+}
+
+.disque{
+  height: 30px;
+  margin: 5px 5px 5px 5px;
+  background-color:#1F3941;
+  border-radius: 50% 50% 0% 0%;
+  border: none;
+}
+
+#interactionJeu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/** fin---------- BLOC DU JEU HANOI---------- fin**/
+/*
+/*
+/*
+/*
+/* DEBUT ----- SECTION "MES PROJETS" ------- DEBUT */
 .projet {
     background: #536976;  
     background: -webkit-linear-gradient(to bottom, white, #203A43, #0F2027);  
