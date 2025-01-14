@@ -4,8 +4,8 @@
     <meta charset="utf-8" >
     <title>Maxime Esteves / Projet Portfolio</title>
     <link rel="icon" type="image/png" href="images/logoME.jpg">
-    <link href="style.css" rel="stylesheet" >
     <link href="projet.css" rel="stylesheet" >
+    <link href="style.css" rel="stylesheet" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
@@ -15,25 +15,33 @@
     
 </head>
 
-<body>
-    <header id= haut-page>
-        <nav>
-            <a href="index.html" class="lien-icone">
-                <img src="images/logoME.jpg" alt="Logo " >
+<body id="haut-page" data-page="index">
+    <header id="navbar">
+        <nav id="">
+            <a href="#haut-page" class="lien-icone">
+                <img src="images/logoME.jpg" alt="Logo">
             </a>
             <div class="navigation">
-                <a href="index.html">Accueil</a>
+                <a href="index.html#haut-page">Accueil</a>
                 <a href="#projet">Projets</a>
                 <a href="jeux.html">Mes jeux</a>
-                <a target="_blank" href="CV MAXIME ESTEVES.pdf">Mon CV</a>
+                <a target="_blank" href="CV 3WAcademy - MAXIME ESTEVES -  Développeur web et web mobile (3).pdf">Mon CV</a>
                 <a href="#contact">Contact</a>
-        </div>
+            </div>
         </nav>
     </header>
     <main>
         <div class="titre-projet-js" data-text="Site web - portfolio"><h1></h1></div>
         <div class="projet-suivant">
-            <a href="projet-eCommerce.html"><h4>SITE E-COMMERCE</h4></a>
+            <a href="projet-eCommerce.html">
+                <h4>SITE E-COMMERCE</h4>
+            </a>
+            <a href="application.html">
+                <h4>APPLICATIONS</h4>
+            </a>
+            <a href="jeux.html">
+                <h4>JEUX</h4>
+            </a>
         </div>
         
         <!-------------- ACCUEIL--DEBUT----------- -->
@@ -155,12 +163,20 @@
     <div class="appear" data-delai="0">
 <h1>PROJET SUIVANT</h1>
 <div class="projet-suivant">
-                <a href="projet-eCommerce.html"><h4>SITE E-COMMERCE</h4></a>
+    <a href="jeux.html"><h4>JEUX</h4></a>
+    <a href="projet-eCommerce.html"><h4>SITE E-COMMERCE</h4></a>
+    <a href="application.html"><h4>APPLICATION</h4></a>
+</div>
+        <section class="section-projets">
+            <div class="projet-precedent"><img id="boutonSuivant" src="images\fleche-gauche.png"  alt="logo-fleche-droite"></div>
+            <div><a id="photoUneHref" href=""><img id="photoUne" src="" alt="logo-projet-ecommerce"></a><div id="photoUneHover">1</div></div>
+            <div><a id="photoDeuxHref" href=""><img id="photoDeux" src=""  alt="logo-portfolio"></a><div id="photoDeuxHover">2</div></div>
+            <div><a id="photoTroisHref" href=""><img id="photoTrois" src=""  alt="logo-jeux_logique"></a><div id="photoTroisHover">3</div></div>
+            <div class="projet-precedent"><img id="boutonPrecedent" src="images\fleche-droite.png"  alt="logo-fleche-droite"></div>
+        </section>
+
         </div>
-        <section class="portfolio-section-photos-4">
-            <div class="grid-projet-4">      
-                <a href="projet-eCommerce.html"><img src="images\logo_LMDN-04.svg"  alt="logo_LMDN-04" ></a>
-            </div></div>
+    </section>
     <!-- --------FIN--------- MES PROJETS ---------FIN--------- -->
  <!-- -------DEBUT -- FORMULAIRE CONTACT --DEBUT------- -->        
  <section id="contact" class="section-contact">
@@ -185,7 +201,6 @@
         </form>
     </div>
     </section>
-</section>
     <!-- -------FIN -- FORMULAIRE CONTACT --FIN------- -->
     </main>
     <footer>
