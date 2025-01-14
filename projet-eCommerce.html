@@ -4,8 +4,8 @@
     <meta charset="utf-8" >
     <title>Maxime Esteves / E-Commerce</title>
     <link rel="icon" type="image/jpg" href="images/logoME.jpg">
-    <link href="style.css" rel="stylesheet" >
     <link href="projet-ecommerce.css" rel="stylesheet" >
+    <link href="style.css" rel="stylesheet" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
@@ -15,17 +15,17 @@
     
 </head>
 
-<body>
-    <header id="haut-page">
-        <nav>
-            <a href="index.html" class="lien-icone">
+<body id="haut-page" data-page="index">
+    <header id="navbar">
+        <nav id="">
+            <a href="#haut-page" class="lien-icone">
                 <img src="images/logoME.jpg" alt="Logo">
             </a>
             <div class="navigation">
-                <a href="index.html">Accueil</a>
+                <a href="index.html#haut-page">Accueil</a>
                 <a href="#projet">Projets</a>
                 <a href="jeux.html">Mes jeux</a>
-                <a target="_blank" href="CV MAXIME ESTEVES.pdf">Mon CV</a>
+                <a target="_blank" href="CV 3WAcademy - MAXIME ESTEVES -  Développeur web et web mobile (3).pdf">Mon CV</a>
                 <a href="#contact">Contact</a>
             </div>
         </nav>
@@ -37,6 +37,12 @@
         <div class="projet-suivant">
             <a href="projet-portfolio.html">
                 <h4>SITE PORTFOLIO</h4>
+            </a>
+            <a href="application.html">
+                <h4>APPLICATIONS</h4>
+            </a>
+            <a href="jeux.html">
+                <h4>JEUX</h4>
             </a>
         </div>
         <!-- ACCUEIL DEBUT -->
@@ -124,7 +130,7 @@
         <section class="portfolio-section-photos">
             <div class="text-webdesign">
                 <h2>"Contact" et "À Propos"</h2>
-               <p>Les deux dernières pages présentent un formulaire de contact pour joindre l’artiste et un petit portrait pour en savoir un peu plus sur son parcours et retrouver ses articles en magasin.
+                <p>Les deux dernières pages présentent un formulaire de contact pour joindre l’artiste et un petit portrait pour en savoir un peu plus sur son parcours et retrouver ses articles en magasin.
                     <br><br><a target="_blank" href="https://www.mignonneries-nathalie.fr/"><em>Consulter le site web </em></a>
                     <br><br>
                     <p>Vous pouvez également retrouver la chaine Tiktok que j'ai entièrement réalisée.</p>
@@ -144,18 +150,20 @@
             <div class="appear" data-delai="0">
                 <h1>PROJET SUIVANT</h1>
                 <div class="projet-suivant">
-                    <a href="projet-eCommerce.html">
-                        <h4>SITE PORTFOLIO</h4>
-                    </a>
+                        <a href="projet-portfolio.html"><h4>SITE WEB PORTFOLIO</h4></a>
+                        <a href="jeux.html"><h4>JEUX</h4></a>
+                        <a href="application.html"><h4>APPLICATION</h4></a>
+                    
                 </div>
-                <section class="portfolio-section-photos-4">
-                    <div class="grid-projet-4">
-                        <a href="projet-portfolio.html">
-                            <img src="images\logo maroue.png" alt="logo maroue">
-                        </a>
-                    </div>
+                <section class="section-projets">
+                    <div class="projet-precedent"><img id="boutonSuivant" src="images\fleche-gauche.png"  alt="logo-fleche-droite"></div>
+                    <div><a id="photoUneHref" href=""><img id="photoUne" src="" alt="logo-projet-ecommerce"></a><div id="photoUneHover">1</div></div>
+                    <div><a id="photoDeuxHref" href=""><img id="photoDeux" src=""  alt="logo-portfolio"></a><div id="photoDeuxHover">2</div></div>
+                    <div><a id="photoTroisHref" href=""><img id="photoTrois" src=""  alt="logo-jeux_logique"></a><div id="photoTroisHover">3</div></div>
+                    <div class="projet-precedent"><img id="boutonPrecedent" src="images\fleche-droite.png"  alt="logo-fleche-droite"></div>
                 </section>
-            </div>
+                </div>
+            </section>
             <!-- MES PROJETS FIN -->
 
             <!-- FORMULAIRE CONTACT DEBUT -->
