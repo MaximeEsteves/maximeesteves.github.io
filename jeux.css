@@ -1,14 +1,13 @@
 /** debut---------- COMMUN ---------- debut**/
-h1{
-  margin: 1em 0em 1em 0em;
+h1 {
+  margin: 60px 60px 20px;
+  color: #3B4F51;
 }
 
-/** FIN---------- BLOC DU JEU LOGIQUE ---------- FIN**/
-/*
-/*
-/*
-/*
-/*
+.titre-jeux {
+  margin: 60px 60px 20px;
+  color: #3B4F51;
+} 
 /*
 /*
 /*
@@ -27,11 +26,9 @@ h1{
 #changerExtreme{
   background-color: rgb(190, 109, 33);
 }
-section {
-  padding: 1em !important;
-}
 
-#titreh1, #titreh2{
+
+#titreh2{
     margin-left: 50px;
 }
 
@@ -115,9 +112,6 @@ button:hover {
     width: 60px;
 }
 
-.bordure {
-  color: white !important;
-}
 
 #interfaceJeuLogique{
   margin: 0px 0px 200px 0px;
@@ -129,7 +123,7 @@ button:hover {
 /*
 /** debut---------- BLOC DU JEU HANOI---------- debut**/
 #h1{
-  margin-left: 50px;
+  text-align: center;
 }
 #h3texte{
   margin-bottom: 1em;
@@ -177,6 +171,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 150px;
 }
 
 
@@ -185,180 +180,126 @@ button:hover {
 /*
 /*
 /*
-/* DEBUT ----- SECTION "MES PROJETS" ------- DEBUT */
-.projet {
-    background: #536976;  
-    background: -webkit-linear-gradient(to bottom, white, #203A43, #0F2027);  
-    background: linear-gradient(to bottom, white, #203A43, #0F2027); 
-    margin-top: 200px;
-
-  }
-  
-  .projet-suivant {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    margin-left: 65px;
-    margin-bottom: 50px;
-  }
-  
-  .projet h1 {
-    margin: 60px 60px 20px;
-    color: #536976;
-  }
-  
-  h4:hover {
-    color: #536976;
-    transition: transform 0.3s ease;
-    transform: scale(1.1);
-  }
-  
-  .portfolio-section-photos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .text-webdesign {
-    width: 1400px;
-    display: flex;
-    text-align: justify;
-    gap: 250px;
-  }
-  
-  .text-webdesign p {
-    color: #BBD2C5;
-  }
-  
-  .grid-projet-2 {
-    display: grid;
-    grid-template-columns: 380px 380px;
-    gap: 450px;
-  }
-  
-  .grid-projet-2 img {
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    border-radius: 50%;
-  }
-  
-  .grid-projet-2 img:hover {
-    transform: scale(1.1);
-  }
+/* DEBUT------FIN DE PAGE PROJET + CONTACT-----DEBUT  */
 
 
+
+.projet h1 {
+  margin: 60px 60px 20px;
+  color: #536976;
+}
+
+.projet h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.projet-precedent img{
+  width: 100px !important;
+  height: 100px !important;
+  box-shadow: none !important; 
+}
+
+
+
+.section-projets{
+  display: flex;
+  display: grid;
+  grid-template-columns:  100px 300px 550px 300px 100px;
+  justify-content: center;
+  gap: 50px;
+  
+}
+.section-projets div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  
+}
+.section-projets img {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  border-radius: 50%;
+  box-shadow: 0 0 50px 5px #aec4b8;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.section-projets img:hover {
+  transform: scale(1.1);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+#photoTrois, #photoUne, #photoDeux{
+  z-index: 1;
+  position: relative;
+}
+#photoTroisHover, #photoUneHover, #photoDeuxHover{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  opacity: 1;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+#photoDeuxHover{
+  width: 550px ! important;
+  height: 550px ! important;
+}
+
+h4 {
+  color: #3C3C3E;
+}
+
+h4:hover {
+  color: #3B4F51;
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+
+.projet-suivant {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-left: 65px;
+}
+
+.bordure {
+  color: #3B4F51;
+  border-bottom: 1px solid;
+  margin: 20px 300px 20px 300px;
+}
+
+/* FIN ----- SECTION "MES PROJETS" ------- FIN */
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/*
 
    /*------------- Section RESPONSIVE----------- */
   /* --------------- TELEPHONE -------------------- */
 
 @media screen and (max-width: 996px) {
-    .couleur-fond-intro {
-      height: 750px;
-    }
-  
     h1 {
       font-size: 4.4em;
+      text-align: center;
     }
   
-    .accueil-introduction {
-      width: 80%;
-    }
-  
-    .cta {
-      padding: 40px 50px;
-      display: flex;
-      justify-content: center;
-      font-size: 2em;
-    }
-  
-    .accueil-introduction p {
-      font-size: 2em;
-      margin: 80px 0px 30px 0px;
-    }
-  
-    .titre-projet h1 {
-      font-size: 4em;
-    }
-  
-    .texte-profil {
-      margin: 50px 60px;
-    }
-  
-    .rubrique-projet {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 150px;
-    }
-  
-    .rubrique-projet p {
-      font-size: 2em;
-      margin-top: 50px;
-    }
-  
-    .grid-projet-2 {
-      display: flex;
-      gap: 50px;
-      margin-bottom: -60px;
-    }
-  
-    #logoMAR {
-      margin-left: 0px;
-    }
-  
-    .grid-projet {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .grid-projet-2 img {
-      width: 400px;
-      margin: 0px 0px 0px 0px;
-    }
-  
-    .text-webdesign {
-      display: none;
-    }
-  
-    .informatique {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      gap: 90px;
-    }
-  
-    #info2 {
-      margin-left: 190px;
-    }
-  
-    #info img {
-      margin-top: 30px;
-    }
-  
-    .accueil-photos {
-      padding: 20px;
-    }
-  
-    .circle {
-      width: 600px;
-      height: 600px;
-      margin-left: 100px;
-    }
-  
-    .informatique img {
-      width: 80%;
-      height: 80%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-      z-index: 1;
-    }
-  
-
-    #titreh1, #titreh2{
-      margin:50px 0px 50px 50px;
-  }
   #titreh3 {
     font-size: 25px;
     margin: 50px 90px 50px 90px;
@@ -394,7 +335,48 @@ button:hover {
   height: 300px;
 }
 
-
+  .section-projets {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 0px;
   }
+
+  #photoTrois, #photoUne{
+    display: none;
+  }
+
+  #photoTroisHover, #photoUneHover, #photoDeuxHover{
+    display: none;
+  }
+  
+  .section-projets img {
+    width: 400px;
+    margin: 0px 0px 0px 0px;
+    
+  }
+  #introductionJeu, #interactionJeu {
+    padding: 70px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    height: 200px;
+  }
+ 
+#btnRecommencerHanoi{
+  padding: 25px;
+}
+
+.projet-suivant{
+  display: none;
+}
+
+.titre-jeux{
+  display: none;
+}
+  }
+  
   
   /*------------- fin Section RESPONSIVE----------- */
