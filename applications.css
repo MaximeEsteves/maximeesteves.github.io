@@ -185,7 +185,11 @@ h1 {
   #photoDeuxHover{
     width: 550px ! important;
     height: 550px ! important;
-  }/* FIN ----- SECTION "MES PROJETS" ------- FIN */
+  }
+ em:hover{
+color:#aec4b8
+  }
+/* FIN ----- SECTION "MES PROJETS" ------- FIN */
   
   /*------------- Section RESPONSIVE----------- */
   
