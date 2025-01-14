@@ -1,10 +1,14 @@
 /** Début --- Introduction --- Début **/
-
 header {
   position: sticky;
   top: 0px;
   z-index: 2;
 }
+.grid-projet {
+  display: grid;
+  grid-template-columns: 600px;
+  gap: 15px;
+} 
 
 .accueil-introduction {
   display: flex;
@@ -71,34 +75,8 @@ header {
   justify-content: space-around;
 }
 
-/* --DEBUT------ EFFET CERCLE -----DEBUT-- */
-
-
-/* --FIN------ EFFET CERCLE -----DEBUT-- */
-
-
-.section-centrale {
-  background-color: white;
-}
-
-.grid-projet {
-  display: grid;
-  grid-template-columns: 600px;
-  gap: 15px;
-}  
-
-/* DEBUT ----- SECTION "MES PROJETS" ------- DEBUT */
-.projet {
-  background: #536976;  
-  background: -webkit-linear-gradient(to bottom, white, #203A43, #0F2027);  
-  background: linear-gradient(to bottom, white, #203A43, #0F2027); 
-}
-
-.projet-suivant {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  margin-left: 65px;
+.rubrique-projet h1{
+  margin-left: 0px !important;
 }
 
 .projet h1 {
@@ -106,51 +84,75 @@ header {
   color: #536976;
 }
 
-.projet h2 {
-  margin-bottom: 20px;
+
+
+/* DEBUT ----- SECTION "MES PROJETS" ------- DEBUT */ 
+
+.projet-precedent img{
+  width: 100px !important;
+  height: 100px !important;
+  box-shadow: none !important; 
 }
 
-h4:hover {
-  color: #536976;
-  transition: transform 0.3s ease;
-  transform: scale(1.1);
-}
 
-.portfolio-section-photos {
+.section-projets{
+  display: flex;
+  display: grid;
+  grid-template-columns:  100px 300px 550px 300px 100px;
+  justify-content: center;
+  gap: 50px;
+  
+}
+.section-projets div{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
 
-.text-webdesign {
-  width: 1400px;
-  display: flex;
-  text-align: justify;
-  gap: 250px;
+  
 }
-
-.text-webdesign p {
-  color: #BBD2C5;
-}
-
-.grid-projet-2 {
-  display: grid;
-  grid-template-columns: 380px 380px;
-  gap: 450px;
-}
-
-.grid-projet-2 img {
+.section-projets img {
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
+  border-radius: 50%;
+  box-shadow: 0 0 50px 5px #aec4b8;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.section-projets img:hover {
+  transform: scale(1.1);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+#photoTrois, #photoUne, #photoDeux{
+  z-index: 1;
+  position: relative;
+}
+#photoTroisHover, #photoUneHover, #photoDeuxHover{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  opacity: 1;
+  text-align: center;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
 }
+#photoDeuxHover{
+  width: 550px ! important;
+  height: 550px ! important;
+}/* FIN ----- SECTION "MES PROJETS" ------- FIN */
 
-.grid-projet-2 img:hover {
-  transform: scale(1.1);
-}
 
-/* FIN ----- SECTION "MES PROJETS" ------- FIN */
+/* --DEBUT------ EFFET CERCLE -----DEBUT-- */
+
+
 
 .circle-container {
   display: flex;
@@ -183,6 +185,7 @@ h4:hover {
   object-fit: contain;
 }
 
+/* --FIN------ EFFET CERCLE -----DEBUT-- */
 
 
 
@@ -194,6 +197,8 @@ h4:hover {
   position: relative;
   top: 100px;
 }
+
+
 
 /*------------- Section RESPONSIVE----------- */
 
@@ -219,20 +224,8 @@ h4:hover {
     grid-template-columns: 250px, 250px;
   }
 
-  .grid-projet-2 {
-    display: grid;
-    grid-template-columns: 350px 350px;
-  }
-
-  .grid-projet-2 img {
-    width: 60%;
-  }
-
-  #logoMAR {
-    margin-left: 140px;
-  }
-
-  .grid-projet-2 img:hover {
+  
+  .section-projets img:hover {
     transform: scale(1.1);
   }
 
@@ -256,14 +249,6 @@ h4:hover {
     margin-bottom: 10px;
   }
 
-  .form-nom-email {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .text-webdesign {
-    width: 1100px;
-  }
 
   .circle {
     width: 490px;
@@ -279,12 +264,6 @@ h4:hover {
     z-index: 1;
   }
 
- 
-
-  header a {
-    font-size: 13px;
-  }
-
   .lien-icone img {
     margin-left: 10px;
     height: 30px;
@@ -292,108 +271,17 @@ h4:hover {
     object-fit: cover;
   }
 
-  header,
-  footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .couleur-fond-intro {
-    height: 450px;
-  }
 }
+/*------------- Section RESPONSIVE----------- */
 
-@media screen and (max-width: 1024px) {
-  .couleur-fond-intro {
-    height: 580px;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1em;
-  }
-
-
-  .titre-projet h1 {
-    font-size: 2.5em;
-  }
-
-  .texte-profil {
-    margin: 50px 250px;
-    font-size: large;
-  }
-
-  .rubrique-projet {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-  }
-
-  .grid-projet-2 {
-    display: flex;
-  }
-
-  #logoMAR {
-    margin-left: 0px;
-  }
-
-  .grid-projet-2 img {
-    width: 200px;
-    margin: 0px -0px 0px -160px;
-  }
-
-  .text-webdesign {
-    width: 750px;
-  }
-
-  .informatique {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 60px;
-  }
-
-  #info2 {
-    margin-left: 190px;
-  }
-
-  .accueil-photos {
-    padding: 20px;
-  }
-
-  .circle {
-    width: 400px;
-    height: 400px;
-    margin-left: 100px;
-  }
-
-  .informatique img {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    z-index: 1;
-  }
-}
 
 /* --------------- TELEPHONE -------------------- */
 
 @media screen and (max-width: 996px) {
-  .couleur-fond-intro {
-    height: 750px;
-  }
-
-  h1 {
-    font-size: 4.4em;
-  }
-
+  
   .accueil-introduction {
     width: 80%;
+    text-align: center;
   }
 
   .cta {
@@ -429,25 +317,11 @@ h4:hover {
     margin-top: 50px;
   }
 
-  .grid-projet-2 {
-    display: flex;
-    gap: 50px;
-    margin-bottom: -60px;
-  }
-
-  #logoMAR {
-    margin-left: 0px;
-  }
-
   .grid-projet {
     display: flex;
     flex-direction: column;
   }
 
-  .grid-projet-2 img {
-    width: 400px;
-    margin: 0px 0px 0px 0px;
-  }
 
   .text-webdesign {
     display: none;
