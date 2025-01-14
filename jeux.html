@@ -19,32 +19,43 @@
     
 </head>
 
-<body>
-    <header id="haut-page">
-        <nav>
-            <a href="index.html" class="lien-icone">
+<body id="haut-page" data-page="index">
+    <header id="navbar">
+        <nav id="">
+            <a href="#haut-page" class="lien-icone">
                 <img src="images/logoME.jpg" alt="Logo">
             </a>
             <div class="navigation">
-                <a href="index.html">Accueil</a>
+                <a href="index.html#haut-page">Accueil</a>
                 <a href="#projet">Projets</a>
-                <a target="_blank" href="CV MAXIME ESTEVES.pdf">Mon CV</a>
+                <a href="jeux.html">Mes jeux</a>
+                <a target="_blank" href="CV 3WAcademy - MAXIME ESTEVES -  Développeur web et web mobile (3).pdf">Mon CV</a>
                 <a href="#contact">Contact</a>
             </div>
         </nav>
     </header>
     <main>
 <!--DEBUT------------- JEU LOGIQUE ----------DEBUT-->
-<!--DEBUT------------- JEU LOGIQUE ----------DEBUT-->
         <div class="titre-jeux" data-text="jeux">
-            <h1 id="titreh1"></h1>
+            <h1></h1>
+        </div>
+        <div class="projet-suivant">
+            <a href="projet-portfolio.html">
+                <h4>SITE PORTFOLIO</h4>
+            </a>
+            <a href="projet-eCommerce.html">
+                <h4>SITE E-COMMERCE</h4>
+            </a>
+            <a href="application.html">
+                <h4>APPLICATIONS</h4>
+            </a>
         </div>
         <!-- ACCUEIL DEBUT -->
-      
+      <h1 id="h1">La grille</h1>
         <h2 id="titreh2"></h2> 
         <h3 id="titreh3">Clique sur le bouton 'Commencer' puis utilise le bouton 'Clique' pour jouer. <br> Si tu as besoin d'aide utilise le bouton 'Indice'</h3>
         <div id="timer">0</div>
-        <section class="sectionjeux">
+        <div class="sectionjeux">
             <div class="emplacement">
                 <img src="" alt="indice image" id="imageIndice">
             </div>
@@ -60,14 +71,13 @@
                 <p id="a9">6</p>
             </div>
             
-            
-        </section>
+        </div>
 <!--FIN------------- JEU LOGIQUE ----------FIN-->
 <!------------------------------------------------->
 <!------------------------------------------------->
 <!------------------------------------------------->
 <!--DEBUT------------- TOUR HANOI ----------DEBUT-->
-<section id="interfaceJeuLogique">
+<div id="interfaceJeuLogique">
 
         <div class="valider">
             
@@ -89,10 +99,12 @@
             </div>
     
         </div>
-</section>
-
-        <section id="introductionJeu">
-            <h1 id="h1">Les tours de Hanoï</h1>
+    </div>
+<div class="bordure"></div>
+<div class="titre-jeux2" data-text="jeux">
+    <h1 id="h1">Les tours de Hanoï</h1>
+</div>
+        <div id="introductionJeu">
             <h3 id="h3introduction">Le but du jeu est d'amener la pile sur la dernière base en respectant les deux règles suivantes : 
             <ol>
                 <li> Déplacer un seul disque à la fois </li>
@@ -101,81 +113,81 @@
         </h3>
             
             <h2 id="erreur"></h2>
-</section>
+</div>
 
-<section id="tours">
+<div id="tours">
                 <div id="tourA"></div>   
                 <div id="tourB"></div>   
                 <div id="tourC"></div>   
-</section>
+</div>
 
-<section id="interactionJeu">
-        <h3 id="h3texte">Entrer deux chiffres pour déplacer un disque (exemple: 12)</h3>
+<div id="interactionJeu">
+        <h3 id="h3texte">Entrer deux chiffres pour déplacer un disque (exemple: 12) <br> Puis appuyer sur la touche Entrée</h3>
         <p id="deplacement">Nombre de coup :</p>    
         <input type="text"> <br>
         <button id="btnRecommencerHanoi">Recommencer</button>
-</section>
-
+</div>
+<div class="bordure"></div>
 
 <!--FIN------------- TOUR HANOI --------------FIN-->
 <!------------------------------------------------->
 <!------------------------------------------------->
 <!------------------------------------------------->
-<!------------------ MES PROJETS ------------------>
-<section class="projet">
-                <div class="bordure" id="projet"></div>
-                <div class="appear" data-delai="0">
-                    <h1>MES PROJETS</h1>
-                    <div class="projet-suivant">
+        <!-- MES PROJETS DEBUT -->
+        <section class="projet" id="projet">
+            <div class="appear" data-delai="0">
+                <h1>PROJET SUIVANT</h1>
+                <div class="projet-suivant">
                         <a href="projet-portfolio.html"><h4>SITE WEB PORTFOLIO</h4></a>
                         <a href="projet-eCommerce.html"><h4>SITE E-COMMERCE</h4></a>
-                    </div>
-                    <!-- Premier projet -->
-                    <section class="portfolio-section-photos">
-                        <div class="grid-projet-2">      
-                            <a href="projet-portfolio.html"><img src="images\logo maroue.png" id="logoMAR" alt="logo-projet-1"></a>
-                            <a href="projet-eCommerce.html"><img src="images\logo_LMDN-04.svg"  alt="logo-projet-2"></a>
-                        </div>
-                        <div class="text-webdesign">
-                            <p>Pour m’exercer sur les bases de la programmation du web, à savoir le HTML et le CSS, j’ai réalisé un site Portfolio.</p>
-                            <p>Pour mon second projet j’ai choisi de créer un site pour une boutique en ligne d’accessoires soins & beauté.</p>
-                        </div>
-                    </section>
-                    <section id="contact" class="section-contact">
-                        <div class="appear" data-delai="0">
-                            <h2>Vous pouvez me contacter</h2>
-                            <form method="post" action="https://formspree.io/f/moqgepvr">                
-                                <div class="form-nom-email">
-                                    <div class="form-column">
-                                        <label for="nom">nom</label>
-                                        <input type="text" name="nom" id="nom">
-                                    </div>
-                                    <div class="form-column">
-                                        <label for="email">email</label>
-                                        <input type="email" name="email" id="email">
-                                    </div>
-                                </div>
-                                <label for="message">message</label>
-                                <textarea name="message" id="message" rows="10"></textarea>
-                                <input type="submit" value="ENVOYER" class="cta">
-                            </form>
-                        </div>
-                    </section>
+                        <a href="application.html"><h4>APPLICATION</h4></a>
+                    
+                </div>
+                <section class="section-projets">
+                    <div class="projet-precedent"><img id="boutonSuivant" src="images\fleche-gauche.png"  alt="logo-fleche-droite"></div>
+                    <div><a id="photoUneHref" href=""><img id="photoUne" src="" alt="logo-projet-ecommerce"></a><div id="photoUneHover">1</div></div>
+                    <div><a id="photoDeuxHref" href=""><img id="photoDeux" src=""  alt="logo-portfolio"></a><div id="photoDeuxHover">2</div></div>
+                    <div><a id="photoTroisHref" href=""><img id="photoTrois" src=""  alt="logo-jeux_logique"></a><div id="photoTroisHover">3</div></div>
+                    <div class="projet-precedent"><img id="boutonPrecedent" src="images\fleche-droite.png"  alt="logo-fleche-droite"></div>
+                </section>
                 </div>
             </section>
-        </main>
-        <footer>
-            <nav>
-                <a href="#haut-page" class="lien-icone">
-                    <img src="images/logoME.jpg" alt="Logo">
-                </a>
-                <em>© 2025 Maxime ESTEVES, tous droits reservés.</em>
-                <div class="navigation">
-                    <a target="_blank" href="https://www.linkedin.com/in/maxime-esteves-7a12b3225/" class="lien-icone">
-                        <img src="images/logo-linkedin.png"  alt="Logo linkedin">
-                    </a>
+            <!-- MES PROJETS FIN -->
+
+            <!-- FORMULAIRE CONTACT DEBUT -->
+            <section id="contact" class="section-contact">
+                <div class="appear" data-delai="0">
+                    <h2>Vous pouvez me contacter</h2>
+                    <form method="post" action="https://formspree.io/f/moqgepvr">
+                        <div class="form-nom-email">
+                            <div class="form-column">
+                                <label for="nom">nom</label>
+                                <input type="text" name="nom" id="nom">
+                            </div>
+                            <div class="form-column">
+                                <label for="email">email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                        </div>
+                        <label for="message">message</label>
+                        <textarea name="message" id="message" rows="10"></textarea>
+                        <input type="submit" value="ENVOYER" class="cta">
+                    </form>
                 </div>
-            </nav>
-        </footer>
-    </body>
-</html>
+            </section>
+            <!-- FORMULAIRE CONTACT FIN -->
+    </main>
+    <footer>
+        <nav>
+            <a href="#haut-page" class="lien-icone">
+                <img src="images/logoME.jpg" alt="Logo">
+            </a>
+            <em>© 2025 Maxime ESTEVES, tous droits réservés.</em>
+            <div class="navigation">
+                <a target="_blank" href="https://www.linkedin.com/in/maxime-esteves-7a12b3225/"class="lien-icone">
+                    <img src="images/logo-linkedin.png" alt="Logo linkedin">
+                </a>
+            </div>
+        </nav>
+    </footer>
+</body>
