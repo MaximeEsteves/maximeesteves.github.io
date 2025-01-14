@@ -116,15 +116,15 @@ h4:hover {
 }
 /* FIN------grid 1 PROJET-----FIN */
 
-/* DEBUT------FIN DE PAGE PROJET + CONTATC-----DEBUT */
+/* DEBUT------FIN DE PAGE PROJET + CONTACT-----DEBUT  */
 
 .portfolio-section-photos a {
-  color: #3C3C3E;
+  color: #3c3c3e;
 }
 
 .text-webdesign em:hover {
   font-weight: 900;
-  color: #aec4b8;
+  color: #f08374;
 }
 
 .portfolio-section-photos-4 {
@@ -151,11 +151,6 @@ h4:hover {
   transform: scale(1.1);
 }
 
-.projet {
-  background: #536976;
-  background: -webkit-linear-gradient(to bottom, white, #203A43, #0F2027);
-  background: linear-gradient(to bottom, white, #203A43, #0F2027);
-}
 
 .projet h1 {
   margin: 60px 60px 20px;
@@ -171,43 +166,69 @@ footer {
   background: #0f2027;
 }
 
+.projet-precedent img{
+  width: 100px !important;
+  height: 100px !important;
+  box-shadow: none !important; 
+}
+
+
+.section-projets{
+  display: flex;
+  display: grid;
+  grid-template-columns:  100px 300px 550px 300px 100px;
+  justify-content: center;
+  gap: 50px;
+  
+}
+.section-projets div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  
+}
+.section-projets img {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  border-radius: 50%;
+  box-shadow: 0 0 50px 5px #aec4b8;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.section-projets img:hover {
+  transform: scale(1.1);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+#photoTrois, #photoUne, #photoDeux{
+  z-index: 1;
+  position: relative;
+}
+#photoTroisHover, #photoUneHover, #photoDeuxHover{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  opacity: 1;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+#photoDeuxHover{
+  width: 550px ! important;
+  height: 550px ! important;
+}/* FIN ----- SECTION "MES PROJETS" ------- FIN */
+
 /*------------- Section RESPONSIVE----------- */
 
-@media screen and (max-width: 1024px) {
-  .portfolio-section-photos {
-    margin-top: 40px;
-  }
-
-  .grid-projet-3 {
-    display: grid;
-    grid-template-columns: 300px 300px;
-    gap: 30px;
-    margin-bottom: 80px;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    margin: auto;
-  }
-
-  .form-nom-email {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: auto;
-    gap: 20px;
-  }
-
-  .form-column {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-}
 
 @media screen and (max-width: 1501px) {
   
@@ -232,10 +253,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  .form-nom-email {
-    flex-direction: column;
-    gap: 0;
-  }
+ 
   .portfolio-section-photos {
     display: flex;
     flex-direction: column;
@@ -257,8 +275,9 @@ footer {
 /* -------------- TELEPHONE ----------------- */
 
 @media screen and (max-width: 996px) {
-.titre-projet-js1 {
+.titre-projet-js2 {
     margin: 100px 0px 100px 50px;
+    text-align: center;
   }
   .grid-projet {
     display: grid;
@@ -294,4 +313,6 @@ footer {
     flex-direction: column;
   }
 }
+/*------------- Section RESPONSIVE----------- */
+
 /*------------- fin Section RESPONSIVE----------- */
