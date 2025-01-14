@@ -1,0 +1,271 @@
+h1 {
+    margin: 60px 60px 20px;
+    color: #3B4F51;
+  }
+  
+  .titre-projet-js2 {
+    margin: 60px 60px 20px;
+    color: #3B4F51;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #3B4F51;
+  }
+  
+  h4 {
+    color: #3C3C3E;
+  }
+  
+  h4:hover {
+    color: #3B4F51;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+  }
+  
+  .bordure {
+    color: #3B4F51;
+    border-bottom: 1px solid;
+    margin: 20px 300px 20px 300px;
+  }
+  
+  .projet-suivant {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-left: 65px;
+  }
+  
+  /* DEBUT----------GRID PROJET------------------- */
+  .introduction-application {
+      margin: 100px 0px 100px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3C505233;
+    padding: 50px;
+    gap: 50px;
+    display: grid;
+    grid-template-columns: 700px 700px;
+
+  }
+  
+  
+  .grid-projet img {
+    display: grid;
+    width: 100%;
+  }
+  
+  /* FIN----------GRID PROJET------------------- */
+  
+  /* DEBUT------grid 1 PROJET-----DEBUT */
+  .grid-projet-1 {
+    display: grid;
+    grid-template-columns: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  
+  .informatique img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .informatique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .main-texte {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-texte h3 {
+    margin: 100px 0px 100px 0px;
+    background-color: #3C505233;
+    padding: 50px;
+    width: 750px;
+    text-align: justify;
+  }
+  /* FIN------grid 1 PROJET-----FIN */
+  
+  /* DEBUT------FIN DE PAGE PROJET + CONTACT-----DEBUT  */
+  
+  .portfolio-section-photos a {
+    color: #3c3c3e;
+  }
+  
+  .text-webdesign em:hover {
+    font-weight: 900;
+    color: #f08374;
+  }
+  
+  
+  .projet h1 {
+    margin: 60px 60px 20px;
+    color: #536976;
+  }
+  
+  .projet h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    background: #0f2027;
+  }
+  
+  .projet-precedent img{
+    width: 100px !important;
+    height: 100px !important;
+    box-shadow: none !important; 
+  }
+  
+  
+  .section-projets{
+    display: flex;
+    display: grid;
+    grid-template-columns:  100px 300px 550px 300px 100px;
+    justify-content: center;
+    gap: 50px;
+    
+  }
+  .section-projets div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    
+  }
+  .section-projets img {
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 5px #aec4b8;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+  .section-projets img:hover {
+    transform: scale(1.1);
+    opacity: 0.3;
+    z-index: 0;
+  }
+  
+  #photoTrois, #photoUne, #photoDeux{
+    z-index: 1;
+    position: relative;
+  }
+  #photoTroisHover, #photoUneHover, #photoDeuxHover{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    opacity: 1;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  #photoDeuxHover{
+    width: 550px ! important;
+    height: 550px ! important;
+  }/* FIN ----- SECTION "MES PROJETS" ------- FIN */
+  
+  /*------------- Section RESPONSIVE----------- */
+  
+
+  
+  @media screen and (max-width: 1501px) {
+    
+    .lien-icone img {
+      margin-left: 10px;
+      height: 30px;
+      width: 30px;
+      object-fit: cover;
+    }
+    .text-webdesign-test {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .introduction-application {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .introduction-application p{
+      width: 1000px;
+    }
+    .grid-projet {
+      width: 800px;
+    }
+    .grid-projet-1 {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+
+ 
+  }
+  /* -------------- TELEPHONE ----------------- */
+  
+  @media screen and (max-width: 996px) {
+  .titre-projet-js2 {
+      margin: 100px 0px 100px 50px;
+    }
+    .grid-projet {
+      display: grid;
+      grid-template-columns: 750px;
+      gap: 30px;
+      margin-bottom: 80px;
+    }
+    .grid-projet-1 {
+      display: grid;
+      grid-template-columns: 750px;
+      grid-template-rows: 0px;
+      gap: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .informatique img {
+      width: 100%;
+      object-fit: cover;
+      gap: 100px;
+    }
+  
+    .informatique {
+      display: flex;
+      flex-direction: column;
+    }
+    .introduction-application p{
+      width: 800px;
+    }
+    .grid-projet {
+      width: 700px;
+    }
+  }
+  /*------------- fin Section RESPONSIVE----------- */
+  

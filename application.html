@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" >
+    <title>Maxime Esteves / Applications</title>
+    <link rel="icon" type="image/jpg" href="images/logoME.jpg">
+    <link href="applications.css" rel="stylesheet" >
+    <link href="style.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+
+<body id="haut-page" data-page="index">
+    <header id="navbar">
+        <nav id="">
+            <a href="#haut-page" class="lien-icone">
+                <img src="images/logoME.jpg" alt="Logo">
+            </a>
+            <div class="navigation">
+                <a href="index.html#haut-page">Accueil</a>
+                <a href="#projet">Projets</a>
+                <a href="jeux.html">Mes jeux</a>
+                <a target="_blank" href="CV 3WAcademy - MAXIME ESTEVES -  Développeur web et web mobile (3).pdf">Mon CV</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="titre-projet-js2" data-text="Application">
+            <h1></h1>
+        </div>
+        <div class="projet-suivant">
+            <a href="projet-portfolio.html">
+                <h4>SITE PORTFOLIO</h4>
+            </a>
+            <a href="projet-eCommerce.html">
+                <h4>SITE E-COMMERCE</h4>
+            </a>
+            <a href="jeux.html">
+                <h4>JEUX</h4>
+            </a>
+        </div>
+        <!-- ACCUEIL DEBUT -->
+        <section class="introduction-application">
+            <div class="text-webdesign">
+                <h2>La détection d'une barre</h2>
+                <p>
+                    Ce programme a pour objectif de détecter une barre de progression visible à l’écran, d’analyser sa longueur, d’en calculer une valeur associée, et de retourner une valeur numérique. <br><br>
+
+                    Ce programme a été généré grâce au prompt engineering avec l’aide de l’IA ChatGPT. <br>
+                    Le terme prompt engineering désigne la formulation de requêtes optimisées pour interagir efficacement avec une intelligence artificielle. Ces prompts sont des instructions ou descriptions données à l'IA afin d’obtenir des résultats précis et pertinents.
+                    <br><br>
+                </p>
+            </div>
+            <div class="grid-projet">
+                <img src="gif\barre_de_progression_gif.gif" alt="animation presentation1">
+            </div>
+        </section>
+        <!-- ACCUEIL FIN -->
+        <div class="bordure"></div>
+        <!-- ANIMATION ACCUEIL SURVOL DEBUT -->
+        <section class="main-texte">
+            <div class="appear" data-delai="0">
+                <h2>La création</h2>
+            </div>
+            <div class="appear" data-delai="0">
+                <h3> Dans le cadre de ce projet, le prompt engineering a consisté à : <br><br>
+                     <li>Décrire clairement les besoins fonctionnels du programme.</li> <br>
+                        <li>Fournir des informations techniques précises, comme les outils souhaités (Python, OpenCV, Tkinter, etc.) et les objectifs (analyse d'une barre de progression).</li><br>
+                        <li>Itérer et ajuster les requêtes en fonction des réponses de l’IA pour améliorer la qualité du code généré.</li>
+                        <br>
+                        Cette collaboration illustre comment l’intelligence artificielle peut être un outil puissant pour accompagner les développeurs dans la réalisation de projets techniques. 
+                        Toutefois, elle reste avant tout un support, et non un substitut, au travail du développeur informatique.</h3>
+            </div>
+          <div class="grid-projet-1">
+                <div class="appear" data-delai="0">
+                    <div class="informatique">
+                        <h5><img src="images\barre-progression.png" alt="img-Bannière et logo">Application</h5>
+                        <h5><img src="images\barre_progression_test.png" alt="img-Article à la une">Barre de progression</h5>
+                    </div>
+                </div>
+                <div class="appear" data-delai="0">
+                    <h3>Dans cet exemple, la barre de progression affichée, de couleur vert émeraude, a une valeur comprise entre -10 000 et +10 000. <br><br>
+                        L'application capture l'écran dans la zone où apparaît la barre de progression et calcule le nombre de pixels depuis le début 
+                        de la barre jusqu'à sa fin. <br><br>Ce processus est répété toutes les 200 millisecondes.<br><br>
+
+                        La barre de progression ayant une longueur d’environ 231 pixels, l’application retourne une valeur numérique proportionnelle au nombre de pixels calculés.<br><br>
+                        
+                        Cependant, étant donné que la barre de progression représente 20 000 possibilités (de -10 000 à +10 000), l’application présente une marge d’erreur 
+                        numérique d’environ 87 unités. Cela s’explique par le ratio 20 000 / 231 ≈ 87.</h3>
+                </div>
+                </section>
+
+            <div class="bordure"></div>
+            <main>
+
+        <!-- PROJETS FIN -->
+
+        <!-- MES PROJETS DEBUT -->
+        <section class="projet" id="projet">
+            <div class="appear" data-delai="0">
+                <h1>PROJET SUIVANT</h1>
+                <div class="projet-suivant">
+                        <a href="projet-portfolio.html"><h4>SITE WEB PORTFOLIO</h4></a>
+                        <a href="projet-portfolio.html"><h4>SITE PORTFOLIO</h4></a>
+                        <a href="jeux.html"><h4>JEUX</h4></a>
+                    
+                </div>
+                <section class="section-projets">
+                    <div class="projet-precedent"><img id="boutonSuivant" src="images\fleche-gauche.png"  alt="logo-fleche-droite"></div>
+                    <div><a id="photoUneHref" href=""><img id="photoUne" src="" alt="logo-projet-ecommerce"></a><div id="photoUneHover">1</div></div>
+                    <div><a id="photoDeuxHref" href=""><img id="photoDeux" src=""  alt="logo-portfolio"></a><div id="photoDeuxHover">2</div></div>
+                    <div><a id="photoTroisHref" href=""><img id="photoTrois" src=""  alt="logo-jeux_logique"></a><div id="photoTroisHover">3</div></div>
+                    <div class="projet-precedent"><img id="boutonPrecedent" src="images\fleche-droite.png"  alt="logo-fleche-droite"></div>
+                </section>
+                </div>
+            </section>
+            <!-- MES PROJETS FIN -->
+
+            <!-- FORMULAIRE CONTACT DEBUT -->
+            <section id="contact" class="section-contact">
+                <div class="appear" data-delai="0">
+                    <h2>Vous pouvez me contacter</h2>
+                    <form method="post" action="https://formspree.io/f/moqgepvr">
+                        <div class="form-nom-email">
+                            <div class="form-column">
+                                <label for="nom">nom</label>
+                                <input type="text" name="nom" id="nom">
+                            </div>
+                            <div class="form-column">
+                                <label for="email">email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                        </div>
+                        <label for="message">message</label>
+                        <textarea name="message" id="message" rows="10"></textarea>
+                        <input type="submit" value="ENVOYER" class="cta">
+                    </form>
+                </div>
+            </section>
+            <!-- FORMULAIRE CONTACT FIN -->
+    </main>
+    <footer>
+        <nav>
+            <a href="#haut-page" class="lien-icone">
+                <img src="images/logoME.jpg" alt="Logo">
+            </a>
+            <em>© 2025 Maxime ESTEVES, tous droits réservés.</em>
+            <div class="navigation">
+                <a target="_blank" href="https://www.linkedin.com/in/maxime-esteves-7a12b3225/"class="lien-icone">
+                    <img src="images/logo-linkedin.png" alt="Logo linkedin">
+                </a>
+            </div>
+        </nav>
+    </footer>
+</body>
